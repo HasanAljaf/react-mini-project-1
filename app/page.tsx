@@ -21,13 +21,12 @@ function Welcome() {
   );
 }
 
+const logo = {
+  name: "People's Hospital logo",
+  imagePath: logoPic,
+  imageSize: 95,
+};
 function Logo() {
-  const logo = {
-    name: "People's Hospital logo",
-    imagePath: logoPic,
-    imageSize: 95,
-  };
-
   return (
     <div className="rounded-4xl shadow-lg p-2 bg-white">
       <Image
@@ -42,17 +41,13 @@ function Logo() {
 }
 
 function Greeting() {
-  let greeting;
   const [status, setStatus] = useState(true);
+  const greeting = status
+    ? 'We will be up and running soon!'
+    : 'Tell your friends and family about us!';
 
   function handleClick() {
     setStatus(!status);
-  }
-
-  if (status) {
-    greeting = 'We will be up and running soon!';
-  } else {
-    greeting = 'Tell your friends and family about us!';
   }
 
   return (
@@ -62,7 +57,7 @@ function Greeting() {
         onClick={handleClick}
         className="rounded-full bg-blue-600 hover:bg-blue-700 active:bg-blue-800 transition-colors text-white font-medium px-6 py-2"
       >
-        click me
+        Learn More
       </button>
     </div>
   );

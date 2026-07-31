@@ -1,7 +1,12 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
+
+//asset imports
 import logoPic from './assets/logo.png';
+
+//component imports
+import DoctorBadge from './components/DoctorBadge';
 
 export default function MyApp() {
   return (
@@ -9,6 +14,7 @@ export default function MyApp() {
       <Logo />
       <Welcome />
       <Greeting />
+      <DoctorBadge />
     </div>
   );
 }

@@ -7,6 +7,7 @@ import logoPic from './assets/logo.png';
 
 //component imports
 import DoctorBadge from './components/DoctorBadge';
+import HospitalInfoCard from './components/HospitalInfoCard';
 
 export default function MyApp() {
   return (
@@ -15,6 +16,7 @@ export default function MyApp() {
       <Welcome />
       <Greeting />
       <DoctorBadge />
+      <HospitalInfoCard />
     </div>
   );
 }

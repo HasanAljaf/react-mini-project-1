@@ -1,9 +1,10 @@
+//asset imports
 import Image from 'next/image';
 import profileImg from '../assets/profilePhoto.png';
 
 export default function DoctorBadge() {
   return (
-    <div className="badgeContainer flex flex-row items-center gap-5 bg-white rounded-2xl shadow-md px-6 py-5 max-w-md mx-auto">
+    <div className="flex flex-row items-center gap-5 bg-white rounded-2xl shadow-md px-6 py-5 max-w-md mx-auto">
       <Image
         src={badgeInfo.photo}
         alt="Profile Photo"

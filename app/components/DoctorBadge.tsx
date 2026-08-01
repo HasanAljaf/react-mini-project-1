@@ -4,12 +4,12 @@ import profileImg from '../assets/profilePhoto.png';
 
 export default function DoctorBadge() {
   return (
-    <div className="flex flex-row items-center gap-5 bg-white rounded-2xl shadow-md px-6 py-5 max-w-md mx-auto">
+    <div className="flex flex-row items-center gap-6 bg-white rounded-2xl shadow-md px-6 py-5 max-w-md mx-auto">
       <Image
         src={badgeInfo.photo}
         alt="Profile Photo"
-        width={150}
-        height={150}
+        width={140}
+        height={140}
         className="rounded-3xl object-cover border-4 border-blue-50 shrink-0"
       />
       <div className="flex flex-col">

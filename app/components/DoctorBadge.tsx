@@ -8,8 +8,7 @@ export default function DoctorBadge() {
       <Image
         src={badgeInfo.photo}
         alt="Profile Photo"
-        width={140}
-        height={140}
+        width={150}
         className="rounded-3xl object-cover border-4 border-blue-50 shrink-0"
       />
       <div className="flex flex-col">

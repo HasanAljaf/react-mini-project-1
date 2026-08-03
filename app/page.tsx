@@ -4,11 +4,13 @@ import Image from 'next/image';
 
 //asset imports
 import logoPic from './assets/logo.png';
+import profilePic from './assets/profilePhoto.png';
 
 //component imports
 import DoctorBadge from './components/DoctorBadge';
 import HospitalInfoCard from './components/HospitalInfoCard';
 import PatientProfileCard from './components/PatientProfileCard';
+import DoctorProfileCard from './components/DoctorProfileCard';
 
 export default function MyApp() {
   return (
@@ -19,6 +21,22 @@ export default function MyApp() {
       <DoctorBadge />
       <HospitalInfoCard />
       <PatientProfileCard />
+      <DoctorProfileCard
+        name="Micheal Harris"
+        imageId={profilePic}
+        credentials="PhD"
+        department="Oncology"
+        email="michealharris@peopleshospital.com"
+        phoneNumber="802-452-3658"
+      />
+      <DoctorProfileCard
+        name="James Tony"
+        imageId={profilePic}
+        credentials="MD"
+        department="Dermatology"
+        email="jamestony@peopleshospital.com"
+        phoneNumber="802-485-3327"
+      />
     </div>
   );
 }

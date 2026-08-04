@@ -11,6 +11,7 @@ import DoctorBadge from './components/DoctorBadge';
 import HospitalInfoCard from './components/HospitalInfoCard';
 import PatientProfileCard from './components/PatientProfileCard';
 import DoctorProfileCard from './components/DoctorProfileCard';
+import { profile } from 'console';
 
 export default function MyApp() {
   return (
@@ -18,9 +19,24 @@ export default function MyApp() {
       <Logo />
       <Welcome />
       <Greeting />
-      <DoctorBadge />
+      <DoctorBadge
+        name="John Green"
+        profileImage={profilePic}
+        positionTitle="Medical Assistant"
+      />
       <HospitalInfoCard />
-      <PatientProfileCard />
+      <PatientProfileCard
+        name="Mason Black"
+        dob="05/15/1979"
+        bloodType="AB"
+        allergies="soy, milk, eggs"
+      />
+      <PatientProfileCard
+        name="Jason Hughes"
+        dob="10/7/1996"
+        bloodType="B"
+        allergies="peanuts, wheat, gluten"
+      />
       <DoctorProfileCard
         name="Micheal Harris"
         imageId={profilePic}

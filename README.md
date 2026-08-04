@@ -22,4 +22,4 @@ Completed passing props module and created a component (DoctorInfoCard) that ren
 
 ## Next step
 
-Before moving on to Conditional Rendering module, I will change all nonstatic components to render data based on received props.
+Before moving on to Conditional Rendering module, change all nonstatic components to render data from received props.

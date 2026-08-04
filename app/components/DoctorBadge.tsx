@@ -1,33 +1,49 @@
 //asset imports
 import Image from 'next/image';
-import profileImg from '../assets/profilePhoto.png';
 
-export default function DoctorBadge() {
+// component props types
+interface BadgeInfoProps {
+  name: string;
+  profileImage: any;
+  imageSize?: number;
+  positionTitle: string;
+}
+
+/*
+  DoctorBadge will recieve props:
+    - name
+    - profileImage
+    - imageSize
+    - positionTitle
+*/
+export default function DoctorBadge({
+  name,
+  profileImage,
+  imageSize = 150,
+  positionTitle,
+}: BadgeInfoProps) {
   return (
     <div className="flex flex-row items-center gap-6 bg-white rounded-2xl shadow-md px-6 py-5 max-w-md mx-auto">
       <Image
-        src={badgeInfo.photo}
-        alt="Profile Photo"
-        width={150}
+        src={profileImage}
+        alt={name + ' profile image'}
+        width={imageSize}
         className="rounded-3xl object-cover border-4 border-blue-50 shrink-0"
       />
       <div className="flex flex-col">
-        <h1 className="text-xl font-semibold text-slate-800">
-          {badgeInfo.name}
-        </h1>
+        <h1 className="text-xl font-semibold text-slate-800">Dr. {name}</h1>
         <p className="text-blue-600 font-medium">
-          {badgeInfo.title} <br /> {badgeInfo.company}
+          {positionTitle} <br /> {staticBadgeInfo.hospitalName}
         </p>
-        <p className="text-slate-500 text-sm">{badgeInfo.location}</p>
+        <p className="text-slate-500 text-sm">
+          {staticBadgeInfo.hospitalAddress}
+        </p>
       </div>
     </div>
   );
 }
 
-const badgeInfo = {
-  name: 'Dr. John Green',
-  location: '111 Colchester Ave',
-  company: "People's Hospital",
-  title: 'Medical Assistant',
-  photo: profileImg,
+const staticBadgeInfo = {
+  hospitalAddress: '111 Colchester Ave',
+  hospitalName: "People's Hospital",
 };

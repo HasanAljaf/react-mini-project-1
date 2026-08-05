@@ -53,7 +53,7 @@ export default function MyApp() {
         email="jamestony@peopleshospital.com"
         phoneNumber="802-485-3327"
       />
-      <ApptStatusBadge apptStatus="completed" />
+      <ApptStatusBadge apptStatus="cancelled" />
     </div>
   );
 }

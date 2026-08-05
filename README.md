@@ -33,7 +33,7 @@ Learning Objectives:
 - How to conditionally include or exclude a piece of JSX
 - Common conditional syntax shortcuts you’ll encounter in React codebases
 
-### Module mini project
+#### Module mini project
 
 Appointment status badge.
 A reusable component that renders a different status based on props:
@@ -42,3 +42,12 @@ A reusable component that renders a different status based on props:
 - completed
 - cancelled
 - anything else (error handling)
+
+### Rendering Lists
+
+Transforming an array of data into array of components, then rendering the list.
+Learning Objectives:
+
+- How to render components from an array using JavaScript’s map()
+- How to render only specific components using JavaScript’s filter()
+- When and why to use React keys

@@ -18,8 +18,27 @@ Mini React projects completed as part of my Healthcare Software Engineering curr
 
 ## Latest Commit
 
-Completed passing props module and created a component (DoctorInfoCard) that renders data from props passed down from parent component.
+Refactored all nonstatic components to render data based on the props recieved by parent component.
 
-## Next step
+## Module Notes
 
-Before moving on to Conditional Rendering module, change all nonstatic components to render data from received props.
+Here are notes from each module learned, and skills practiced through corrosponding mini projects.
+
+### Conditional Rendering
+
+Rendering components based on a condition.
+Learning Objectives:
+
+- How to return different JSX depending on a condition
+- How to conditionally include or exclude a piece of JSX
+- Common conditional syntax shortcuts you’ll encounter in React codebases
+
+### Module mini project
+
+Appointment status badge.
+A reusable component that renders a different status based on props:
+
+- upcomming
+- completed
+- cancelled
+- anything else (error handling)

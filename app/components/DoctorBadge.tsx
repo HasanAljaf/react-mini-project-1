@@ -23,7 +23,7 @@ export default function DoctorBadge({
   positionTitle,
 }: BadgeInfoProps) {
   return (
-    <div className="flex flex-row items-center gap-6 bg-white rounded-2xl shadow-md px-6 py-5 max-w-md mx-auto">
+    <section className="flex flex-row items-center gap-6 bg-white rounded-2xl shadow-md px-6 py-5 max-w-md mx-auto">
       <Image
         src={profileImage}
         alt={name + ' profile image'}
@@ -39,7 +39,7 @@ export default function DoctorBadge({
           {staticBadgeInfo.hospitalAddress}
         </p>
       </div>
-    </div>
+    </section>
   );
 }
 

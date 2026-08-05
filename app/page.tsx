@@ -11,7 +11,7 @@ import DoctorBadge from './components/DoctorBadge';
 import HospitalInfoCard from './components/HospitalInfoCard';
 import PatientProfileCard from './components/PatientProfileCard';
 import DoctorProfileCard from './components/DoctorProfileCard';
-import { profile } from 'console';
+import ApptStatusBadge from './components/AppointmentStatusBadge';
 
 export default function MyApp() {
   return (
@@ -53,6 +53,7 @@ export default function MyApp() {
         email="jamestony@peopleshospital.com"
         phoneNumber="802-485-3327"
       />
+      <ApptStatusBadge apptStatus="completed" />
     </div>
   );
 }

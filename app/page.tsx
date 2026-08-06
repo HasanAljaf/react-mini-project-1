@@ -12,6 +12,7 @@ import HospitalInfoCard from './components/HospitalInfoCard';
 import PatientProfileCard from './components/PatientProfileCard';
 import DoctorProfileCard from './components/DoctorProfileCard';
 import ApptStatusBadge from './components/AppointmentStatusBadge';
+import MedicationList from './components/MedicationList';
 
 export default function MyApp() {
   return (
@@ -54,6 +55,7 @@ export default function MyApp() {
         phoneNumber="802-485-3327"
       />
       <ApptStatusBadge apptStatus="cancelled" />
+      <MedicationList />
     </div>
   );
 }

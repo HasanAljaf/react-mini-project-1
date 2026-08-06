@@ -51,3 +51,14 @@ Learning Objectives:
 - How to render components from an array using JavaScript’s map()
 - How to render only specific components using JavaScript’s filter()
 - When and why to use React keys
+
+#### Skills practiced
+
+- Javascript .map() and .filter() functions
+- React <Fragment></Fragment> to render multiple nodes when mapping an array
+
+#### Module mini project
+
+Render medication list from an array of objects.
+
+### Keeping components pure

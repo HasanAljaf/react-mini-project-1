@@ -20,7 +20,7 @@ Mini React projects completed as part of my Healthcare Software Engineering curr
 
 Refactored all nonstatic components to render data based on the props recieved by parent component.
 
-## Module Notes
+## Module: Describing the UI
 
 Here are notes from each module learned, and skills practiced through corrosponding mini projects.
 
@@ -62,3 +62,20 @@ Learning Objectives:
 Render medication list from an array of objects.
 
 ### Keeping components pure
+
+A pure component in React is a component that when given the same input (props), will always return the same output (the JSX they render). They don't change objects or variables that existed before they render.
+
+Learning Objectives:
+
+- What purity is and how it helps you avoid bugs
+- How to keep components pure by keeping changes out of the render phase
+- How to use Strict Mode to find mistakes in your components
+
+#### Module mini project
+
+Refactor every component so it becomes a pure component.
+
+- No duplicated code
+- reusable components only
+
+## Module: Adding Interactivity

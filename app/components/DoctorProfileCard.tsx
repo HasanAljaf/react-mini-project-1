@@ -1,4 +1,3 @@
-//asset imports
 import Image from 'next/image';
 
 // component props types

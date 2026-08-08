@@ -14,15 +14,15 @@ export default function ApptStatusBadge({ apptStatus }: StatusBadgeProps) {
   let statusMessage;
   let statusStyles = 'bg-slate-100 text-slate-600';
 
-  if (apptStatus === undefined) {
+  if (apptStatus == undefined) {
     statusMessage = 'You have no appointments.';
-  } else if (apptStatus === 'upcoming') {
+  } else if (apptStatus == 'upcoming') {
     statusMessage = 'You have an upcoming appointment.';
     statusStyles = 'bg-blue-50 text-blue-600';
-  } else if (apptStatus === 'completed') {
+  } else if (apptStatus == 'completed') {
     statusMessage = 'Appointment completed.';
     statusStyles = 'bg-green-50 text-green-600';
-  } else if (apptStatus === 'cancelled') {
+  } else if (apptStatus == 'cancelled') {
     statusMessage = 'Appointment cancelled.';
     statusStyles = 'bg-red-50 text-red-600';
   } else {

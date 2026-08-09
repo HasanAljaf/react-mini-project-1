@@ -16,10 +16,6 @@ Mini React projects completed as part of my Healthcare Software Engineering curr
 - Working through the modules "Describing the UI" on the official React documentation.
 - After completing each module, a mini project will be completed with the skills learned from that module and a commit will be pushed to this repository.
 
-## Latest Commit
-
-Refactored all nonstatic components to render data based on the props recieved by parent component.
-
 ## Module: Describing the UI
 
 Here are notes from each module learned, and skills practiced through corrosponding mini projects.
@@ -79,3 +75,5 @@ Refactor every component so it becomes a pure component.
 - reusable components only
 
 ## Module: Adding Interactivity
+
+### Responding to events

@@ -77,3 +77,15 @@ Refactor every component so it becomes a pure component.
 ## Module: Adding Interactivity
 
 ### Responding to events
+
+Learning objectives:
+
+- Different ways to write an event handler
+- How to pass event handling logic from a parent component
+- How events propagate and how to stop them
+
+#### Module mini project
+
+Patient Check-In Button
+
+The Patient can check in and check out via a button. The button will allow the patient to check in, or check out if they are already checked in.

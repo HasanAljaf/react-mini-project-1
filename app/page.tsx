@@ -13,6 +13,7 @@ import DoctorBadge from './components/DoctorBadge';
 import PatientProfileCard from './components/PatientProfileCard';
 import AppStatusBadge from './components/AppStatusBadge';
 import MedicationList from './components/MedicationList';
+import PatientCheckIn from './components/PatientCheckIn';
 
 export default function MyApp() {
   return (
@@ -41,6 +42,7 @@ export default function MyApp() {
         allergies="wheat, gluten"
       />
       <AppStatusBadge apptStatus="upcoming" />
+      <PatientCheckIn />
       <MedicationList />
     </div>
   );

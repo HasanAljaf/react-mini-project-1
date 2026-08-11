@@ -89,3 +89,23 @@ Learning objectives:
 Patient Check-In Button
 
 The Patient can check in and check out via a button. The button will allow the patient to check in, or check out if they are already checked in.
+
+### State: A component's memory
+
+Learning objectives:
+
+- How to add a state variable with the useState Hook
+- What pair of values the useState Hook returns
+- How to add more than one state variable
+- Why state is called local
+
+#### Module mini project
+
+Medication counter.
+
+UI conceptually contains:
+
+- The medication's name
+- The current number of doses taken
+- A button to record another dose
+- A button to remove a recorded dose

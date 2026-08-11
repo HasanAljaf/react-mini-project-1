@@ -14,6 +14,7 @@ import PatientProfileCard from './components/PatientProfileCard';
 import AppStatusBadge from './components/AppStatusBadge';
 import MedicationList from './components/MedicationList';
 import PatientCheckIn from './components/PatientCheckIn';
+import MedicationCounter from './components/MedicationCounter';
 
 export default function MyApp() {
   return (
@@ -44,6 +45,8 @@ export default function MyApp() {
       <AppStatusBadge apptStatus="upcoming" />
       <PatientCheckIn />
       <MedicationList />
+      <MedicationCounter name="Molly" />
+      <MedicationCounter name="Oxy" />
     </div>
   );
 }

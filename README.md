@@ -109,3 +109,19 @@ UI conceptually contains:
 - The current number of doses taken
 - A button to record another dose
 - A button to remove a recorded dose
+
+### Rendering & Snapshots
+
+Learning objectives:
+
+- What rendering means in React
+- When and why React renders a component
+- The steps involved in displaying a component on screen
+- Why rendering does not always produce a DOM update
+
+- How setting state triggers re-renders
+- When and how state updates
+- Why state does not update immediately after you set it
+- How event handlers access a “snapshot” of the state
+
+### Updating Objects in State

@@ -15,6 +15,7 @@ import AppStatusBadge from './components/AppStatusBadge';
 import MedicationList from './components/MedicationList';
 import PatientCheckIn from './components/PatientCheckIn';
 import MedicationCounter from './components/MedicationCounter';
+import PatientVisitCounter from './components/PatientVisitCounter';
 
 export default function MyApp() {
   return (
@@ -47,6 +48,7 @@ export default function MyApp() {
       <MedicationList />
       <MedicationCounter name="Molly" />
       <MedicationCounter name="Oxy" />
+      <PatientVisitCounter name="Hasan Aljaf" />
     </div>
   );
 }

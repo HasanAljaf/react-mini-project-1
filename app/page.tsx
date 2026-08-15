@@ -7,15 +7,7 @@ import profilePic from './assets/profilePhoto.png';
 import HospitalLogo from './components/HospitalLogo';
 import Welcome from './components/WelcomeBanner';
 import Greeting from './components/Greeting';
-import HospitalInfoCard from './components/HospitalInfoCard';
-import DoctorProfileCard from './components/DoctorProfileCard';
-import DoctorBadge from './components/DoctorBadge';
-import PatientProfileCard from './components/PatientProfileCard';
-import AppStatusBadge from './components/AppStatusBadge';
-import MedicationList from './components/MedicationList';
-import PatientCheckIn from './components/PatientCheckIn';
-import MedicationCounter from './components/MedicationCounter';
-import PatientVisitCounter from './components/PatientVisitCounter';
+import PatientProfileEditor from './components/PatientProfileEditor';
 
 export default function MyApp() {
   return (
@@ -23,6 +15,15 @@ export default function MyApp() {
       <HospitalLogo />
       <Welcome />
       <Greeting />
+      <PatientProfileEditor />
+    </div>
+  );
+}
+
+{
+  /* COMPONENTS
+      copy and paste a component to render. Don't forget to import!
+      
       <HospitalInfoCard />
       <DoctorProfileCard
         name="Micheal Smith"
@@ -49,6 +50,6 @@ export default function MyApp() {
       <MedicationCounter name="Molly" />
       <MedicationCounter name="Oxy" />
       <PatientVisitCounter name="Hasan Aljaf" />
-    </div>
-  );
+      <PatientProfileEditor />
+        */
 }

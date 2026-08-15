@@ -125,3 +125,29 @@ Learning objectives:
 - How event handlers access a “snapshot” of the state
 
 ### Updating Objects in State
+
+Learning objectives:
+
+- How to correctly update an object in React state
+- How to update a nested object without mutating it
+- What immutability is, and how not to break it
+- How to make object copying less repetitive with Immer
+
+#### Module mini project
+
+Patient profile editor.
+
+A component that displays patient information such as:
+
+- name
+- age
+- blood type
+- allergies
+
+The component will also have input fields for each property so the user can update the information separately.
+
+As the user is typing, the value of the corrosponding input field updates live
+
+Skills applied
+
+- update object properties as state values

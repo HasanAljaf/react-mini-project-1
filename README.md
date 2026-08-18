@@ -151,3 +151,39 @@ As the user is typing, the value of the corrosponding input field updates live
 Skills applied
 
 - update object properties as state values
+
+### Updating arrays in state
+
+Learning objectives:
+
+- How to add, remove, or change items in an array in React state
+- How to update an object inside of an array
+- How to make array copying less repetitive with Immer
+
+#### Module mini project
+
+Appointment manager.
+
+My approach:
+
+1. build the UI first
+   - Two main sections; an appointment form for adding and editing appointments, and appointment list for displaying and deleting appointments
+
+2. determine what an appointment object needs (properties)
+   - name (patient)
+   - doctor
+   - date
+   - time
+   - reason for visit
+
+3. give each object a unique identifier (id)
+
+4. store array of appointments in state
+
+5. implement features
+   - add
+   - edit
+   - delete
+6. test combinations of all three operations
+
+7. Style the UI

@@ -27,6 +27,7 @@ export default function AppointmentManager() {
 
   // Event Handlers
   function handleAddAppointment() {
+    // a => previous appointments (naming standard practice)
     setAppointments((a) => [
       ...a,
       {
@@ -70,12 +71,6 @@ export default function AppointmentManager() {
 
     if (!apptToSave) {
       alert('Error: no appointment found!');
-      setFullName('');
-      setDoctor('');
-      setDate('');
-      setTime('');
-      setReason('');
-      setEditingId(null);
     } else {
       setAppointments((current) =>
         current.map((a) =>
@@ -91,13 +86,14 @@ export default function AppointmentManager() {
             : a
         )
       );
-      setFullName('');
-      setDoctor('');
-      setDate('');
-      setTime('');
-      setReason('');
-      setEditingId(null);
     }
+
+    setFullName('');
+    setDoctor('');
+    setDate('');
+    setTime('');
+    setReason('');
+    setEditingId(null);
   }
 
   return (

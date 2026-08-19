@@ -187,3 +187,41 @@ My approach:
 6. test combinations of all three operations
 
 7. Style the UI
+
+## Module: Managing State
+
+### Sharing state between components
+
+Learning Objectives:
+
+- How to share state between components by lifting it up
+- What are controlled and uncontrolled components
+
+#### Module mini project
+
+Doctor dashboard:
+
+- Patient List
+- Patient Details
+- Selecting a patient updates another component.
+
+Code Implementation:
+
+- Data -> patients array of patient objects: ✅
+  - id, name, age, blood type, allergies
+
+Dashboard (parent) ✅
+
+- Shared state -> selectedPatient ✅
+- Event handler -> handlePatientSelect ✅
+
+Patient List (child) ✅
+
+- props:
+  - patients array ✅
+  - onSelectPatient -> onClick ✅
+
+Patient Details (child) ✅
+
+- props:
+  - displayPatient -> parent state ✅

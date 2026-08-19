@@ -7,7 +7,7 @@ import profilePic from './assets/profilePhoto.png';
 import HospitalLogo from './components/HospitalLogo';
 import Welcome from './components/WelcomeBanner';
 import Greeting from './components/Greeting';
-import AppointmentManager from './components/AppointmentManager';
+import DoctorDashboard from './components/DoctorDashboard';
 
 export default function MyApp() {
   return (
@@ -15,7 +15,7 @@ export default function MyApp() {
       <HospitalLogo />
       <Welcome />
       <Greeting />
-      <AppointmentManager />
+      <DoctorDashboard />
     </div>
   );
 }
@@ -52,5 +52,6 @@ export default function MyApp() {
       <PatientVisitCounter name="Hasan Aljaf" />
       <PatientProfileEditor />
       <AppointmentManager />
+      <DoctorDashboard />
   */
 }
